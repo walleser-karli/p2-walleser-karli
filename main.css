@@ -1,0 +1,79 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+ font-family: 'Lato', sans-serif;
+}
+
+/* Homepage - Mobile */
+#mobile-header {
+ background-color: #552980;
+ height: 20%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#mobile-header figure {
+ text-align: center;
+ margin: 25px 7%
+}
+
+#mobile-header figure img {
+ justify-content: center;
+ align-items: center;
+ max-width: 375px;
+ width: 75%;
+}
+
+#icecream-girl {
+ width: 100%;
+ max-width: 1500px;
+}
+
+#mission {
+ background-color: #6CAB3F;
+ margin-top: -3px;
+ padding: 10px;
+}
+
+#mission p {
+ color: white;
+ border: white 2px solid;
+ padding: 20px 5%;
+}
+
+#icons {
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+ height: 250px;
+ background-color: #6B5581;
+}
+
+#icons figure {
+ text-align: center;
+ padding: 0 5px;
+}
+
+#icons figure img {
+ max-width: 100px;
+ width: 70%;
+}
+
+#icons figure figcaption {
+ padding-top: 10px;
+}
+
+#icons figure figcaption a {
+ color: white;
+ text-decoration: none;
+}
+
+#merry img {
+ width: 100%;
+ max-width: 2500px;
+}
