@@ -29,6 +29,22 @@ body {
  width: 75%;
 }
 
+#mobile-hero {
+ position: relative;
+}
+
+div {
+ position: absolute;
+ top: 173px;
+ right: 0px;
+ z-index: 1;
+}
+
+div img {
+ width: 100%;
+ max-width: 100px;
+}
+
 #icecream-girl {
  width: 100%;
  max-width: 1500px;
