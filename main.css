@@ -215,6 +215,94 @@ footer p {
  padding-top: 15px;
 }
 
+/* About Us - Mobile */
+
+#about-hero img {
+ width: 100%;
+ max-width: 2500px;
+}
+
+#who-we-are {
+ padding-bottom: 15px;
+}
+
+#who-we-are h2 {
+ font-family:'Sansita Swashed', cursive;
+ font-size: 2rem;
+ padding: 10px 0 5px 0;
+ border-bottom: #6CAB3F 30px solid;
+ margin-left: 5%;
+ color:  #231F20;
+}
+
+#who-we-are h4 {
+ color: #552980;
+ font-size: 1.1em;
+ padding: 10px 5%;
+}
+
+#who-we-are p {
+ font-size: 1em;
+ padding: 10px 5%;
+ color: #231F20;
+}
+
+#our-story {
+ background-color: #FFBC25;
+ padding: 30px 0;
+}
+
+#our-story h2 {
+ font-family:'Sansita Swashed', cursive;
+ font-size: 2rem;
+ padding: 0 0 5px 0;
+ margin-left: 5%;
+ color: white;
+ border-bottom: #552980 2px dashed;
+}
+
+#our-story figure {
+ text-align: center;
+ padding: 15px 0;
+ color: #231F20;
+}
+
+#our-story figure img {
+ width: 100%;
+ max-width: 613px;
+}
+
+#our-story p {
+ padding: 10px 5%;
+ font-size: 1em;
+ color: #231F20;
+}
+
+#village {
+ padding: 20px 0;
+}
+
+#village h2 {
+ font-family:'Sansita Swashed', cursive;
+ font-size: 2rem;
+ padding: 0 0 5px 0;
+ border-bottom: #DB1937 30px solid;
+ margin-left: 5%;
+ color:  #231F20;
+}
+
+#village p {
+ padding: 10px 5%;
+ font-size: 1em;
+ color: #231F20;
+}
+
+#bottom-castle img {
+ width: 100%;
+ max-width: 640px;
+ border-bottom: #552980 30px solid;
+}
+
 /********************************** START 500PX MIN-WIDTH MEDIA QUERY **************************************/
 @media (min-width: 500px) {
  /* Homepage */
