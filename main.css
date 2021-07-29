@@ -447,6 +447,7 @@ footer p {
  font-size: 1.5em;
  font-weight: 100;
  padding-right: 6px;
+ width: 123px;
 }
 
 #village-slogan figure img {
@@ -460,16 +461,20 @@ h4 {
  font-size: 1.25rem;
 }
 
+#middle-help figure {
+   text-align: center;
+}
+
 #middle-help figure img {
  width: 100%;
- max-width: 2500px;
+ max-width: 600px;
 }
 
 /* Accordion Menu */
 .accordion-menu {
  min-height: 100vh;
  width: 80%;
- margin: 0 auto;
+ margin: 20px;
  display: flex;
  flex-direction: column;
  align-items: center;
@@ -481,8 +486,7 @@ h4 {
 }
 
 .title {
-   font-size: 3rem;
-   margin: 2rem 0rem;
+   font-size: 2rem;
 }
 
 .faq {
@@ -542,12 +546,120 @@ svg {
 /* Accordion */
 
 /* Image Slider */
+
+#bottom-help {
+   text-align: center;
+}
+
 .slider {
-   width: 800px;
    height: 500px;
    border-radius: 10px;
+   overflow: hidden;
+}
+
+.slides {
+   width: 500%;
+   height: 500px;
+   display: flex;
+}
+
+.slides input {
+   display: none;
+}
+
+.slide {
+   width: 20%;
+   transition: 2s;
+}
+
+.slide img {
+   width: 100%;
+   max-width: 600px;
+}
+
+.navigation-manual {
+   position: absolute;
+   width: 100%;
+   margin-top: -40px;
+   display: flex;
+   justify-content: center;
+}
+
+.manual-btn {
+   border: 2px solid #552980;
+   padding: 5px;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+   margin-right: 40px;
+}
+
+.manual-btn:hover {
+   background: #552980;
+}
+
+#radio1:checked ~ .first {
+   margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+   margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+   margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+   margin-left: -60%;
+}
+
+.navigation-auto {
+   position: absolute;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   margin-top: 460px;
+}
+
+.navigation-auto div {
+   border: 2px solid white;
+   padding: 5px;
+   border-radius: 10px;
+   transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+   margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+   background: #552980;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+   background: #552980;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+   background: #552980;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+   background: #552980;
 }
 /* Image Slider */
+
+.weather {
+   font-size: 2rem;
+   text-align: center;
+   margin: 32px 0;
+   border-bottom: 30px solid #552980;
+   padding-bottom: 35px;
+}
 /* How to Help Mobile */
 
 /********************************** START 500PX MIN-WIDTH MEDIA QUERY **************************************/
@@ -692,6 +804,36 @@ svg {
 		text-decoration: none;
 	}
 
+   .desktop-menu ul li a:hover {
+		color: #FFBC25;
+		transition: 1s;
+	}
+
+   /* .main-menu-labels {
+      margin: 0;
+      padding: 15px 0;
+      background-color: #08254f;
+      color: #fff;
+      font-size: 18px;
+    }
+
+   .sub-menu-company {
+      padding-left: 0;
+      background-color: #dde1e7;
+    }
+
+    .sub-menu-company li {
+      display: block;
+      width: 100%;
+      padding: 20px;
+      border: 2px solid #fff;
+      box-sizing: border-box;
+    }
+
+    .hide3 {
+      opacity: 0;
+    } */
+
    .donate {
       top: 90px;
       right: 46px;
@@ -770,19 +912,6 @@ svg {
       width: 100%;
    }
    
-   /* How to Help page */
-   #middle-help {
-      display: flex;
-      justify-content: space-around;
-   }
-
-   #middle-help figure {
-      width: 40%;
-   }
-
-   #accordion-menu {
-      width: 60%;
-   }
 }
 /*********************************** END 1000PX MIN-WIDTH MEDIA QUERY **************************************/
 
@@ -795,6 +924,10 @@ svg {
       right: 0;
       background-color: #6B5581;
       position: absolute;
+   }
+
+   #purple-box-help {
+      height: 2502px;
    }
 
    #purple-box-header {
@@ -855,6 +988,36 @@ svg {
 
    .about-bottom {
       width: 80%;
+   }
+
+   /* How to Help page */
+   #village-top, .navigation-auto, .navigation-manual, .weather {
+      width: 80%;
+   }
+
+   #middle-help {
+      display: flex;
+      justify-content: space-around;
+      width: 80%;
+      margin-bottom: -20px;
+      margin-top: 50px;
+   }
+
+   #middle-help figure {
+      width: 40%;
+      margin: 25px;
+   }
+
+   #bottom-help {
+      width: 80%;
+      background-color: #FFBC25;
+      height: 578px;
+      display: flex;
+      align-items: center;
+   }
+
+   #accordion-menu {
+      width: 60%;
    }
 
 }
