@@ -42,8 +42,8 @@ body {
  width: 35px;
  height: 30px;
  position: fixed;
- top: 50px;
- right: 50px;
+ top: 16px;
+ right: 16px;
  cursor: pointer;
  display: flex;
  flex-direction: column;
@@ -173,6 +173,10 @@ div img {
  font-size: 1.15em;
 }
 
+.purple-mission {
+   display: none;
+}
+
 #icons {
  display: flex;
  justify-content: space-evenly;
@@ -198,6 +202,10 @@ div img {
 #icons figure figcaption a {
  color: white;
  text-decoration: none;
+}
+
+#desktop-hero {
+   display: none;
 }
 
 #merry {
@@ -669,6 +677,7 @@ svg {
 
    .desktop-menu ul {
 		list-style-type: none;
+      margin: 30px 0 0 5%;
 	}
 
 	.desktop-menu ul li {
@@ -683,8 +692,82 @@ svg {
 		text-decoration: none;
 	}
 
+   .donate {
+      top: 90px;
+      right: 46px;
+   }
+
    .mobile-logo, .container {
       display: none;
+   }
+
+   /* Homepage */ 
+   #mobile-hero, #icons {
+      display: none;
+   }
+
+   #desktop-hero {
+      display: flex;
+   }
+
+   .icecream-girl2 {
+      width: 80%;
+   }
+
+   .icecream-girl2 img {
+      width: 100%;
+      max-width: 1300px;
+   }
+
+   #icons-aside {
+      background-color: #6B5581;
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 3px;
+      border-top: 2px white dashed;
+      margin-top: -2px;
+   }
+
+   #icons-aside figure {
+      text-align: center;
+      margin: 25px;
+   }
+
+   #icons-aside figure figcaption a {
+      color: white;
+      text-decoration: none;
+   }
+
+   .mission-whole {
+      display: flex;
+   }
+
+   #mission {
+      width: 80%;
+   }
+
+   .purple-mission {
+      display: flex;
+      background-color: #6B5581;
+      right: 0;
+      width: 20%;
+      margin-top: -3px;
+      margin-left: -20px;
+   }
+
+   .purple-mission p {
+      border-top: 2px white dashed;
+      margin: 10px 0;
+       width: 100%;
+      border-bottom: 2px white dashed;
+      color: #6B5581;
+   }
+
+   .homepage-footer {
+      width: 100%;
    }
    
    /* How to Help page */
@@ -725,6 +808,11 @@ svg {
    #purple-box-header figure img {
       width: 100%;
       max-width: 60px;
+   }
+
+   .donate {
+      top: 142px;
+      right: 61px;
    }
 
    footer {
