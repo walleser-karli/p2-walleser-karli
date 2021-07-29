@@ -9,6 +9,14 @@ body {
  color: #231F20;
 }
 
+.desktop-container {
+   display: none;
+}
+
+.purple-box {
+   display: none;
+}
+
 /* Hamburger Menu */
 
 .navbar {
@@ -301,6 +309,7 @@ div img {
 footer {
  text-align: center;
  padding: 30px 0;
+ z-index: 1000;
 }
 
 footer figure img {
@@ -318,6 +327,10 @@ footer p {
 }
 
 /* About Us - Mobile */
+
+#about-clipped-hero {
+   display: none;
+}
 
 #about-hero img {
  width: 100%;
@@ -404,6 +417,10 @@ footer p {
  max-width: 640px;
  border-bottom: #552980 30px solid;
 }
+
+#bottom-siblings {
+   display: none;
+}
 /* About Us Mobile */
 
 /* How to Help Mobile */
@@ -450,6 +467,11 @@ h4 {
  align-items: center;
 }
 
+.accordion-menu h4 {
+   font-family: "Sansita Swashed", cursive;
+   color: #6CAB3F;
+}
+
 .title {
    font-size: 3rem;
    margin: 2rem 0rem;
@@ -482,8 +504,8 @@ h4 {
 
 .answer p {
    padding-top: 1rem;
-   line-height: 1.6;
-   font-size: 1.4rem;
+   line-height: 1.4;
+   font-size: 1.1rem;
 }
 
 .faq.active .answer {
@@ -509,6 +531,15 @@ svg {
       transform: translateY(0px);
    }
 }
+/* Accordion */
+
+/* Image Slider */
+.slider {
+   width: 800px;
+   height: 500px;
+   border-radius: 10px;
+}
+/* Image Slider */
 /* How to Help Mobile */
 
 /********************************** START 500PX MIN-WIDTH MEDIA QUERY **************************************/
@@ -559,16 +590,47 @@ svg {
 }
 /********************************** END 500PX MIN-WIDTH MEDIA QUERY **************************************/
 
+/********************************* START 650PX MIN-WIDTH MEDIA QUERY **************************************/
+@media (min-width: 650px) {
+   #bottom-siblings {
+      display: flex;
+   }
+
+   #bottom-siblings img {
+      width: 100%;
+      max-width: 640px;
+      border-bottom: 30px #552980 solid;
+   }
+
+   .about-bottom {
+      display: flex;
+   }
+
+   #bottom-castle, #bottom-siblings {
+      width: 50%;
+   }
+}
+/********************************* END 650PX MIN-WIDTH MEDIA QUERY **************************************/
+
 /********************************** START 700PX MIN-WIDTH MEDIA QUERY **************************************/
 @media (min-width: 700px) {
  /* Homepage */
- #prince-slogan {
-  left: 39%;
- }
+   #prince-slogan {
+   left: 39%;
+   }
 
- #prince-slogan span {
-  padding: 5px 20px;
- }
+   #prince-slogan span {
+   padding: 5px 20px;
+   }
+
+ /* How to Help page */
+   #village-slogan figure img {
+      max-width: 300px;
+   }
+
+   #mayor  {
+      max-width: 236px;
+   }
 }
 /********************************** END 700PX MIN-WIDTH MEDIA QUERY **************************************/
 
@@ -580,3 +642,140 @@ svg {
  }
 }
 /********************************** END 850PX MIN-WIDTH MEDIA QUERY **************************************/
+
+/********************************* START 1000PX MIN-WIDTH MEDIA QUERY **************************************/
+@media (min-width: 1000px) {
+   #mobile-header {
+		display: flex;
+		justify-content: space-between;
+      background-color: white;
+	}
+   
+   .desktop-container {
+      display: flex;
+      width: 100%;
+   }
+
+   .desktop-menu {
+		display: block;
+		float: right;
+		width: 50%;
+		text-align: left;
+		flex: 1;
+		margin: auto 0;
+      border-bottom: 2px #552980 dashed;
+      padding-bottom: 10px;
+	}
+
+   .desktop-menu ul {
+		list-style-type: none;
+	}
+
+	.desktop-menu ul li {
+		display: inline;
+		padding: 0 5%;
+      font-size: 1.15em;
+	}
+
+	.desktop-menu ul li a {
+		color: #231F20;
+		transition: 1s;
+		text-decoration: none;
+	}
+
+   .mobile-logo, .container {
+      display: none;
+   }
+   
+   /* How to Help page */
+   #middle-help {
+      display: flex;
+      justify-content: space-around;
+   }
+
+   #middle-help figure {
+      width: 40%;
+   }
+
+   #accordion-menu {
+      width: 60%;
+   }
+}
+/*********************************** END 1000PX MIN-WIDTH MEDIA QUERY **************************************/
+
+/********************************* START 1170PX MIN-WIDTH MEDIA QUERY **************************************/
+@media (min-width: 1170px) {
+   .purple-box {
+      display: flex;
+      width: 20%;
+      height: 2530px;
+      right: 0;
+      background-color: #6B5581;
+      position: absolute;
+   }
+
+   #purple-box-header {
+      background-color: #6B5581;
+      width: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   #purple-box-header figure img {
+      width: 100%;
+      max-width: 60px;
+   }
+
+   footer {
+      width: 80%;
+   }
+
+   /* About page */
+   #about-clipped-hero {
+      display: block;
+      width: 80%;
+   }
+
+   #about-clipped-hero img {
+      width: 96%;
+      max-width: 1400px;
+      margin-left: 3%;
+      margin-top: -2%;
+   }
+
+   #about-hero {
+      display: none;
+   }
+
+   #who-we-are, #our-story, #village {
+      width: 80%;
+   }
+
+   .together {
+      display: flex;
+      margin: 10px 5%;
+   }
+
+   .together figure {
+      width: 40%;
+   }
+
+   .story-text {
+      width: 60%;
+   }
+
+   .about-bottom {
+      width: 80%;
+   }
+
+}
+/********************************* END 1170PX MIN-WIDTH MEDIA QUERY **************************************/
+
+/********************************* START 1400PX MIN-WIDTH MEDIA QUERY **************************************/
+@media (min-width: 1400px) {
+   .purple-box {
+      height: 2750px;
+   }
+}
+/********************************* END 1400PX MIN-WIDTH MEDIA QUERY **************************************/

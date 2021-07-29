@@ -15,9 +15,11 @@
   <body>
 
    <header id="mobile-header">
-    <figure>
+    <figure class="mobile-logo">
      <img src="images/white-logo.png" alt="white Give Kids the World Logo" title="Give Kids the World logo" />
     </figure> 
+
+    <!-- Hamburger menu -->
 
     <div class="container">
      <nav class="navbar">
@@ -29,25 +31,65 @@
 
       <ul class="nav-list">
        <li class="nav-item">
-        <a href="#" class="nav-link">Home</a>
+        <a href="index.html" class="nav-link">Home</a>
        </li>
 
        <li class="nav-item">
-        <a href="#" class="nav-link">About Us</a>
+        <a href="about.html" class="nav-link">About Us</a>
        </li>
 
        <li class="nav-item">
-        <a href="#" class="nav-link">How to Help</a>
+        <a href="help.html" class="nav-link">How to Help</a>
        </li>
       </ul>
      </nav>
     </div>
+
+    <!-- Desktop nav -->
+    <div class="desktop-container">
+      <figure>
+         <img src="images/color-logo.png" alt="Give Kids the World logo in color" title="GKTW logo color" />
+      </figure>
+      
+      <nav class="desktop-menu">
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="help.html">How to Help</a></li>
+         </ul>
+      </nav>
+
+      <div id="purple-box-header">
+         <figure>
+            <a href="https://www.facebook.com/gktwvillage/" target="_blank"><img src="images/facebook.png" alt="Facebook circle icon" title="Facebook" /></a>
+         </figure>
+         <figure>
+            <a href="https://www.instagram.com/gktwvillage/?hl=en" target="_blank"><img src="images/insta.png" alt="Instagram circle icon" title="Instagram" /></a> 
+         </figure>
+         <figure>
+            <a href="https://twitter.com/GKTWVillage?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="images/twitter.png" alt="Twitter circle icon" title="Twitter" /></a>
+         </figure>
+         <figure>
+            <a href="https://www.youtube.com/channel/UCYth0Sj7JMolDJIymb784bw" target="_blank"><img src="images/youtube.png" alt="YouTube circle icon" title="YouTube" /></a>
+         </figure>
+
+      </div>
+   </div>
+
    </header>
+
+   
 
    <main>
 
+      <div class="purple-box"></div>
+
     <section id="about-hero">
      <img src="images/villa.jpg" alt="front view of a orange family villa at the Village" title="villa" />
+    </section>
+
+    <section id="about-clipped-hero">
+       <img src="images/villa-clipped.png" alt="clipped picture of orange villa" title="clipped villa" />
     </section>
 
     <section id="who-we-are">
@@ -63,16 +105,20 @@
     <section id="our-story">
      <h2>Our Story</h2>
 
-     <figure>
-         <img src="images/henri.png" alt="Give Kids the World founder Henri Landwirth hugging children" alt="Henri Landwirth" />
-         <figcaption>Henri Landwirth, founder of GKTW, pictured with wish children</figcaption>
-     </figure>
+      <div class="together">
+         <figure>
+               <img src="images/henri.png" alt="Give Kids the World founder Henri Landwirth hugging children" alt="Henri Landwirth" />
+               <figcaption>Henri Landwirth, founder of GKTW, pictured with wish children</figcaption>
+         </figure>
 
-     <p>The story of Give Kids The World begins with a little girl named Amy, a wish, and the desire of one man to make that wish come true.</p>
+         <div class="story-text">
+            <p>The story of Give Kids The World begins with a little girl named Amy, a wish, and the desire of one man to make that wish come true.</p>
 
-     <p>Amy had leukemia and a wish to visit Orlando’s theme parks. To facilitate this wish, a respected hotelier was asked to provide a complimentary stay for Amy and her family. Although the hotelier gladly obliged, the remainder of Amy's travel plans took too long to arrange, and her wish was never granted. Time simply ran out, and Amy had passed away.</p>
+            <p>Amy had leukemia and a wish to visit Orlando’s theme parks. To facilitate this wish, a respected hotelier was asked to provide a complimentary stay for Amy and her family. Although the hotelier gladly obliged, the remainder of Amy's travel plans took too long to arrange, and her wish was never granted. Time simply ran out, and Amy had passed away.</p>
 
-     <p>This unfulfilled wish inspired the hotelier to make a vow that no child in need would ever be failed again. That man was Henri Landwirth, and his desire to ensure that Amy's story would never repeat itself is a mission Give Kids The World has fulfilled since 1986.</p>
+            <p>This unfulfilled wish inspired the hotelier to make a vow that no child in need would ever be failed again. That man was Henri Landwirth, and his desire to ensure that Amy's story would never repeat itself is a mission Give Kids The World has fulfilled since 1986.</p>
+         </div>
+      </div>
     </section>
 
     <section id="village">
@@ -87,9 +133,15 @@
      <p>With the help of many generous individuals, corporations and partnering wish-granting organizations, Give Kids The World Village has welcomed more than 176,000 families from all 50 states and 76 countries.</p>
     </section>
 
-    <figure id="bottom-castle">
-     <img src="images/castle-night.jpg" alt="Castle of Miracles and carousel lit up with Christmas lights at night" title="Christmas Carousel"/>
-    </figure>
+    <div class="about-bottom">
+      <figure id="bottom-castle">
+         <img src="images/castle-night.jpg" alt="Castle of Miracles and carousel lit up with Christmas lights at night" title="Christmas Carousel"/>
+      </figure>
+
+      <figure id="bottom-siblings">
+         <img src="images/siblings.jpg" alt="little brother holds hands with his sister riding in her wheelchair going down the street" title="Wish siblings" />
+      </figure>
+   </div>
 
    </main>
 
